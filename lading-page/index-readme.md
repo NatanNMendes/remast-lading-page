@@ -2,7 +2,7 @@
 
 Este código HTML descreve a estrutura de uma página web para a empresa Remast Consultoria em Gestão Empresarial. A seguir, explico cada parte do código:
 
-## Cabeçalho (<head>)
+## Cabeçalho (`<head>`)
 
 - **Metadados e configurações básicas**:
 
@@ -26,7 +26,7 @@ Define o título da página, inclui um link para o arquivo CSS externo para esti
 
 ## Corpo (<body>)
 
-### Cabeçalho e Navegação (<header>)
+### Cabeçalho e Navegação (`<header>`)
 
 - **Barra de navegação**:
 
@@ -155,7 +155,7 @@ Descreve o processo de trabalho da empresa, passo a passo.
 
 Fornece informações de contato, incluindo um mapa, endereço, número de WhatsApp, e email.
 
-## Rodapé (<footer>)
+## Rodapé (`<footer>`)
 
 - **Informações de Direitos Autorais**:
 
