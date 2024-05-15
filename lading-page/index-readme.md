@@ -53,7 +53,7 @@ Define o título da página, inclui um link para o arquivo CSS externo para esti
 
 Contém o logotipo, o nome da empresa, um menu de navegação para dispositivos móveis, e uma lista de links para diferentes seções da página.
 
-### Seções da Página
+### Seções da Página (`<section>`)
 
 - **Banner**:
 
@@ -172,7 +172,7 @@ Fornece informações de contato, incluindo um mapa, endereço, número de Whats
 
 Exibe informações de direitos autorais.
 
-## JavaScript
+### JavaScript (`<script>`)
 
 - **Script externo:**:
 
