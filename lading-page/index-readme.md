@@ -24,7 +24,7 @@ Esses elementos garantem que a página tenha a codificação de caracteres corre
 
 Define o título da página, inclui um link para o arquivo CSS externo para estilos, e especifica um favicon.
 
-## Corpo (<body>)
+## Corpo (`<body>`)
 
 ### Cabeçalho e Navegação (`<header>`)
 
@@ -155,7 +155,7 @@ Descreve o processo de trabalho da empresa, passo a passo.
 
 Fornece informações de contato, incluindo um mapa, endereço, número de WhatsApp, e email.
 
-## Rodapé (`<footer>`)
+### Rodapé (`<footer>`)
 
 - **Informações de Direitos Autorais**:
 
