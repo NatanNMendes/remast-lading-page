@@ -1,7 +1,6 @@
-
 # Style.CSS
 
-Este documento descreve o código CSS utilizado para estilizar uma página web com fontes, cores e layout específicos. A página utiliza as fontes "Poppins" e "Montserrat" do Google Fonts e apresenta uma paleta de cores definida por variáveis CSS.
+O código CSS fornecido é usado para estilizar uma página web, incluindo fontes, cores, layout e responsividade. Vou explicar cada parte em detalhes:
 
 ## Importação de Fontes
 
@@ -10,8 +9,9 @@ Este documento descreve o código CSS utilizado para estilizar uma página web c
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 ~~~
 
-## Variáveis de Cores
+Essas linhas importam as fontes "Poppins" e "Montserrat" do Google Fonts, que são utilizadas em diferentes partes da página.
 
+## Variáveis de Cores
 ~~~css
 :root {
   --cor-cinza-1: #D9DADC;
@@ -24,7 +24,7 @@ Este documento descreve o código CSS utilizado para estilizar uma página web c
 }
 ~~~
 
-Definição das cores usadas no design
+Definem as cores e a fonte padrão que serão utilizadas ao longo do CSS, facilitando a manutenção e a consistência visual
 
 ## Estilos Globais
 
@@ -42,7 +42,7 @@ html, body {
 }
 ~~~
 
-Aplicação de estilos globais para todos os elementos
+Esses estilos garantem que todos os elementos tenham margens e espaçamentos zerados, utilizem o box-sizing: border-box para incluir padding e border no tamanho total dos elementos e utilizem a fonte padrão definida anteriormente.
 
 ## Navegação
 
@@ -51,7 +51,7 @@ Aplicação de estilos globais para todos os elementos
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:10px 20px;
+  padding: 10px 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -60,7 +60,11 @@ Aplicação de estilos globais para todos os elementos
   background-color: var(--cor-branca);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
+~~~
 
+Estiliza a barra de navegação para que fique fixa no topo, com espaçamento e sombra para destacá-la.
+
+~~~css
 .logo {
   display: flex;
   align-items: center;
@@ -78,7 +82,11 @@ Aplicação de estilos globais para todos os elementos
   font-weight: bold;
   word-wrap: break-word;
 }
+~~~
 
+Define o estilo do logotipo, incluindo a imagem e o texto.
+
+~~~css
 .nav-list {
   list-style: none;
   display: flex;
@@ -96,7 +104,11 @@ Aplicação de estilos globais para todos os elementos
   font-size: 16px;
   font-weight: bold;
 }
+~~~
 
+Estiliza a lista de navegação, removendo a marcação padrão e ajustando o espaçamento.
+
+~~~css
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -111,7 +123,7 @@ Aplicação de estilos globais para todos os elementos
 }
 ~~~
 
-Estilos para a barra de navegação, logo e lista de navegação
+Define o estilo do menu móvel (hambúrguer) para dispositivos menores.
 
 ## Seções e Banner
 
@@ -120,7 +132,11 @@ Estilos para a barra de navegação, logo e lista de navegação
   background-color: var(--cor-branca);
   padding: 80px 50px;
 }
+~~~
 
+Define o estilo geral das seções da página.
+
+~~~css
 .banner {
   margin-top: 80px;
   display: flex;
@@ -129,7 +145,11 @@ Estilos para a barra de navegação, logo e lista de navegação
   background-size: cover;
   height: 90vh;
 }
+~~~
 
+Estiliza o banner principal, incluindo a imagem de fundo e a altura.
+
+~~~css
 .banner-text {
   color: var(--cor-azul);
   text-align: center;
@@ -145,7 +165,7 @@ Estilos para a barra de navegação, logo e lista de navegação
 }
 ~~~
 
-Estilos para seções gerais e o banner principal
+Define o texto do banner, incluindo cor, tamanho da fonte e sombra do texto.
 
 ## Layout de Duas Colunas e Cartões
 
@@ -163,7 +183,11 @@ Estilos para seções gerais e o banner principal
   font-weight: 500;
   font-size: 40px;
 }
+~~~
 
+Define o estilo das seções com layout de duas colunas, centralizando o texto e ajustando o espaçamento.
+
+~~~css
 .double-column {
   display: flex;
   flex-direction: row;
@@ -172,7 +196,11 @@ Estilos para seções gerais e o banner principal
   width: 100%;
   margin-top: 40px;
 }
+~~~
 
+Configura o layout de duas colunas para alinhar elementos lado a lado.
+
+~~~css
 .text {
   flex: 5;
   margin-right: 20px;
@@ -182,11 +210,19 @@ Estilos para seções gerais e o banner principal
   color: var(--cor-cinza-3);
   font-size: 38px;
 }
+~~~
 
+Define o estilo do texto nas seções de duas colunas.
+
+~~~css
 .image {
   width: 40%;
 }
+~~~
 
+Configura o tamanho da imagem nas seções de duas colunas.
+
+~~~css
 .card-group {
   display: flex;
   flex-direction: row;
@@ -197,7 +233,11 @@ Estilos para seções gerais e o banner principal
   padding: 0 20px;
   margin: 20px 0px;
 }
+~~~
 
+Estiliza um grupo de cartões para permitir rolagem horizontal e espaçamento entre eles.
+
+~~~css
 .card-model {
   flex: 0 0 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -209,7 +249,11 @@ Estilos para seções gerais e o banner principal
   transform: translateY(-10px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
+~~~
 
+Define o estilo dos cartões, incluindo efeitos de hover para destacá-los.
+
+~~~css
 .card-body {
   padding: 20px;
   border-radius: 0 0 32px 32px;
@@ -233,7 +277,7 @@ Estilos para seções gerais e o banner principal
 }
 ~~~
 
-Estilos para seções com layout de duas colunas e grupos de cartões
+Define o estilo interno dos cartões, incluindo título, texto e vetor (imagem).
 
 ## Seção "Como Fazemos" e Contato
 
@@ -244,7 +288,11 @@ Estilos para seções com layout de duas colunas e grupos de cartões
   align-items: stretch;
   flex-wrap: wrap;
 }
+~~~
 
+Estiliza a seção "Como Fazemos" para distribuir elementos em duas colunas, adaptando-se ao tamanho da tela.
+
+~~~css
 #how-we-do .card-group-topic {
   flex: 1;
   max-width: 45%; 
@@ -253,7 +301,11 @@ Estilos para seções com layout de duas colunas e grupos de cartões
   border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }
+~~~
 
+Define o estilo dos grupos de tópicos na seção "Como Fazemos".
+
+~~~css
 #how-we-do .text, .card-group-topic {
   flex: 1;
   max-width: 45%;
@@ -270,63 +322,69 @@ Estilos para seções com layout de duas colunas e grupos de cartões
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
+~~~
 
+Estiliza o texto e os grupos de tópicos na seção "Como Fazemos".
+
+~~~css
 .card-group-topic {
   background-color: var(--cor-azul);
-  padding: 20px; 
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }
 
-.card-text-topic {
-  color: var(--cor-branca); 
-  font-size: 16px; 
-  margin-bottom: 15px;
-  line-height: 1.5; 
-  text-indent: 20px; 
-  flex-grow: 1;
+#how-we-do .card-title-topic {
+  color: var(--cor-amarela);
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-#contact .map-container {
-  width: 95%;
-  margin: 20px 0px;
+#how-we-do .card-text-topic {
+  color: var(--cor-branca);
+  font-size: 18px;
+  line-height: 1.5;
 }
+~~~
 
-#contact .map-container .map {
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  border: none;
-}
+Define o estilo dos cartões de tópicos na seção "Como Fazemos".
 
+## Contato
+
+~~~css
 #contact .group-contact-information {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-
-#contact .group-contact-information .card-group-contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 100%;
+}
+~~~
+
+Estiliza a seção de contato para distribuir informações de contato de forma flexível.
+
+~~~css
+#contact .group-contact-information .card-group-contact {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
 }
 
 #contact .group-contact-information .card-group-contact .card-contact {
-  width: calc(50% - 20px); 
-  padding: 20px;
-  background-color: var(--cor-branca);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  background-color: var(--cor-azul);
+  color: var(--cor-branca);
+  width: calc(50% - 20px);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+~~~
 
-#contact .group-contact-information .card-group-contact .card-contact .card-vector {
-  width: 50px;
-  margin-right: 15px;
-}
+Define o estilo dos cartões de contato, incluindo layout, cores e sombra.
 
+~~~css
 #contact .group-contact-information .card-group-contact .card-contact .information-group {
   display: flex;
   flex-direction: column;
@@ -339,9 +397,9 @@ Estilos para seções com layout de duas colunas e grupos de cartões
 }
 ~~~
 
-Estilos específicos para a seção "Como Fazemos" e informações de contato
+Estiliza as informações dentro dos cartões de contato, garantindo alinhamento e espaçamento adequado.
 
-## Rodapé
+# Rodapé
 
 ~~~css
 .footer {
@@ -360,11 +418,11 @@ Estilos específicos para a seção "Como Fazemos" e informações de contato
 }
 ~~~
 
-Estilos para o rodapé da página
+Define o estilo do rodapé, incluindo cores, alinhamento de texto e espaçamento.
 
-## Responsividade
+# Responsividade
 
-~~~
+~~~css
 @media only screen and (max-width: 999px) {
   .nav-list {
     flex-direction: column;
@@ -458,37 +516,37 @@ Estilos para o rodapé da página
   }
 
   #how-we-do .double-column {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    #how-we-do .text {
-      font-size: 18px;
-      padding: 20px;
-      margin: 0;
-      text-align: center;
-      max-width: 90%;
-    }
-  
-    #how-we-do .card-group-topic {
-      margin-top: 20px;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 90%;
-    }
-  
-    #how-we-do .card-text-topic {
-      font-size: 14px;
-      line-height: 1.5;
-      margin-bottom: 15px;
-      text-indent: 0;
-    }
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #contact .group-contact-information .card-group-contact {
+  #how-we-do .text {
+    font-size: 18px;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  #how-we-do .card-group-topic {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+  }
+
+  #how-we-do .card-text-topic {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-indent: 0;
+  }
+
+  #contact .group-contact-information .card-group-contact {
     max-width: 100%;
   }
   
-    #contact .group-contact-information .card-group-contact .card-contact {
+  #contact .group-contact-information .card-group-contact .card-contact {
     width: calc(100% - 20px);
   }
 
@@ -502,4 +560,6 @@ Estilos para o rodapé da página
 }
 ~~~
 
-Estilos responsivos para telas menores:
+Define estilos responsivos para adaptar o layout em telas menores, como celulares e tablets, garantindo que a página continue visualmente atraente e funcional.
+
+>O código CSS garante que a página seja visualmente atraente, funcional e responsiva, utilizando uma paleta de cores sofisticada e fontes elegantes. A estrutura flexível permite que o conteúdo se ajuste automaticamente a diferentes tamanhos de tela, proporcionando uma boa experiência do usuário em dispositivos de diversos formatos.
