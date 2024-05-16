@@ -1,13 +1,16 @@
+
 # Style.CSS
 
-Este arquivo CSS é utilizado para estilizar uma página web com uma navegação fixa, banner, seções de conteúdo e um rodapé. Ele utiliza as fontes "Poppins" e "Montserrat" importadas do Google Fonts.
+Este documento descreve o código CSS utilizado para estilizar uma página web com fontes, cores e layout específicos. A página utiliza as fontes "Poppins" e "Montserrat" do Google Fonts e apresenta uma paleta de cores definida por variáveis CSS.
+
+## Importação de Fontes
 
 ~~~css
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 ~~~
 
-## Variáveis CSS
+## Variáveis de Cores
 
 ~~~css
 :root {
@@ -21,9 +24,9 @@ Este arquivo CSS é utilizado para estilizar uma página web com uma navegação
 }
 ~~~
 
-Definição de cores e fontes usadas ao longo do arquivo
+Definição das cores usadas no design
 
-## Reset e Configurações Globais
+## Estilos Globais
 
 ~~~css
 * {
@@ -39,7 +42,7 @@ html, body {
 }
 ~~~
 
-Configuração global para remover margens e preenchimentos, definir a fonte padrão, e evitar overflow horizontal.
+Aplicação de estilos globais para todos os elementos
 
 ## Navegação
 
@@ -48,7 +51,7 @@ Configuração global para remover margens e preenchimentos, definir a fonte pad
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding:10px 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -66,7 +69,6 @@ Configuração global para remover margens e preenchimentos, definir a fonte pad
 .logo-image {
   height: 60px;
 }
-
 .logo-text {
   width: 150px;
   font-size: 20px;
@@ -94,13 +96,7 @@ Configuração global para remover margens e preenchimentos, definir a fonte pad
   font-size: 16px;
   font-weight: bold;
 }
-~~~
 
-Estilo para a barra de navegação fixa no topo da página.
-
-## Menu Mobile
-
-~~~css
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -115,14 +111,46 @@ Estilo para a barra de navegação fixa no topo da página.
 }
 ~~~
 
-Estilo para o menu de navegação em dispositivos móveis.
+Estilos para a barra de navegação, logo e lista de navegação
 
-## Seções Gerais
+## Seções e Banner
 
 ~~~css
 .section {
   background-color: var(--cor-branca);
-  padding: 80px 50px ;
+  padding: 80px 50px;
+}
+
+.banner {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  background: url("../assets/image/background.png") no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+}
+
+.banner-text {
+  color: var(--cor-azul);
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  width: 80%;
+  height: 500px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+~~~
+
+Estilos para seções gerais e o banner principal
+
+## Layout de Duas Colunas e Cartões
+
+~~~css
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,6 +163,343 @@ Estilo para o menu de navegação em dispositivos móveis.
   font-weight: 500;
   font-size: 40px;
 }
+
+.double-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.text {
+  flex: 5;
+  margin-right: 20px;
+  width: auto;
+  height: auto;
+  text-align: left;
+  color: var(--cor-cinza-3);
+  font-size: 38px;
+}
+
+.image {
+  width: 40%;
+}
+
+.card-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0 20px;
+  margin: 20px 0px;
+}
+
+.card-model {
+  flex: 0 0 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: 10px;
+}
+
+.card-model:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 20px;
+  border-radius: 0 0 32px 32px;
+}
+
+.card-title {
+  color: var(--cor-azul);
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: var(--cor-cinza-3);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card-vector {
+  width: 80px;
+  height: auto;
+  margin-bottom: -20px;
+}
 ~~~
 
-Estilo para as seções gerais da página.
+Estilos para seções com layout de duas colunas e grupos de cartões
+
+## Seção "Como Fazemos" e Contato
+
+~~~css
+#how-we-do .double-column {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+#how-we-do .card-group-topic {
+  flex: 1;
+  max-width: 45%; 
+  background-color: var(--cor-azul);
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+#how-we-do .text, .card-group-topic {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+#how-we-do .text {
+  color: var(--cor-cinza-3);
+  font-size: 28px;
+  margin: 0 10px;
+  padding: 20px;
+  background-color: var(--cor-cinza-1);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.card-group-topic {
+  background-color: var(--cor-azul);
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+.card-text-topic {
+  color: var(--cor-branca); 
+  font-size: 16px; 
+  margin-bottom: 15px;
+  line-height: 1.5; 
+  text-indent: 20px; 
+  flex-grow: 1;
+}
+
+#contact .map-container {
+  width: 95%;
+  margin: 20px 0px;
+}
+
+#contact .map-container .map {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
+}
+
+#contact .group-contact-information {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#contact .group-contact-information .card-group-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+#contact .group-contact-information .card-group-contact .card-contact {
+  width: calc(50% - 20px); 
+  padding: 20px;
+  background-color: var(--cor-branca);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+}
+
+#contact .group-contact-information .card-group-contact .card-contact .card-vector {
+  width: 50px;
+  margin-right: 15px;
+}
+
+#contact .group-contact-information .card-group-contact .card-contact .information-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .group-contact-information .card-group-contact .card-contact .information-group .card-title,
+#contact .group-contact-information .card-group-contact .card-contact .information-group .card-text {
+  text-align: left; 
+  margin-bottom: 5px; 
+}
+~~~
+
+Estilos específicos para a seção "Como Fazemos" e informações de contato
+
+## Rodapé
+
+~~~css
+.footer {
+  background-color: var(--cor-azul); 
+  color: var(--cor-branca);
+  text-align: center; 
+  padding: 20px 0; 
+  font-size: 16px; 
+  line-height: 1.5; 
+  border-top: 3px solid var(--cor-amarela); 
+}
+
+.footer .copyright-information {
+  margin: 10px 0; 
+  padding: 0 20px; 
+}
+~~~
+
+Estilos para o rodapé da página
+
+## Responsividade
+
+~~~
+@media only screen and (max-width: 999px) {
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    width: 60%;
+    height: 350px;
+    top: 80px;
+    left: -100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+    justify-content: space-around;
+  }
+
+  .nav-list.active {
+      left: 0;
+  }
+
+  .nav-list a {
+    font-size: 20px;
+    padding: 20px 0px;
+  }
+
+  .mobile-menu {
+      display: flex;
+  }
+  .section {
+    padding: 40px 20px;
+    margin: 60px 0;
+  }
+
+  .banner {
+    margin-top: 60px;
+    height: 70vh;
+  }
+
+  .banner-text {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .double-column {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .text {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+
+  .image {
+    width: 80%;
+  }
+
+  .card-group {
+    flex-direction: column;
+    align-items: center; 
+    overflow-x: hidden; 
+    gap: 10px; 
+    padding: 10px 0;
+  }
+
+  .card-model {
+    flex: 0 0 auto;
+    width: 90%; 
+    margin: 10px 0; 
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    margin-bottom: 5px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .card-vector {
+    width: 60px;
+    margin-bottom: -15px;
+  }
+
+  #how-we-do .double-column {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #how-we-do .text {
+      font-size: 18px;
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+      max-width: 90%;
+    }
+  
+    #how-we-do .card-group-topic {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 90%;
+    }
+  
+    #how-we-do .card-text-topic {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      text-indent: 0;
+    }
+
+    #contact .group-contact-information .card-group-contact {
+    max-width: 100%;
+  }
+  
+    #contact .group-contact-information .card-group-contact .card-contact {
+    width: calc(100% - 20px);
+  }
+
+  .footer {
+    padding: 10px 0;
+  }
+
+  .footer .copyright-information {
+    padding: 0 10px;
+  }
+}
+~~~
+
+Estilos responsivos para telas menores:
