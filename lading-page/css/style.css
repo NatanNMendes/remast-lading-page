@@ -95,7 +95,15 @@ html, body {
   margin-top: 80px;
   display: flex;
   align-items: center;
-  background: url("../assets/image/background.png") no-repeat center center;
+  background: linear-gradient(to right, 
+    rgba(243, 222, 26, 1) 0%, 
+    rgba(243, 222, 26, 1) 10%, 
+    rgba(243, 222, 26, 0.86) 24%, 
+    rgba(243, 222, 26, 0.42) 58%, 
+    rgba(243, 222, 26, 0.26) 74%, 
+    rgba(243, 222, 26, 0) 100%
+  ), 
+  url("../assets/image/background.png") no-repeat center center;
   background-size: cover;
   height: 90vh;
 }

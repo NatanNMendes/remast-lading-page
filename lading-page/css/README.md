@@ -136,18 +136,51 @@ Define o estilo do menu móvel (hambúrguer) para dispositivos menores.
 
 Define o estilo geral das seções da página.
 
-~~~css
-.banner {
-  margin-top: 80px;
-  display: flex;
-  align-items: center;
-  background: url("../assets/image/background.png") no-repeat center center;
-  background-size: cover;
-  height: 90vh;
-}
-~~~
+Vamos analisar e explicar o CSS para a classe `.banner` passo a passo:
 
-Estiliza o banner principal, incluindo a imagem de fundo e a altura.
+```css
+.banner {
+  margin-top: 80px; /* Define uma margem superior de 80 pixels. */
+  display: flex; /* Define o elemento como um contêiner flexível, permitindo o uso de flexbox para alinhar seus filhos. */
+  align-items: center; /* Alinha os itens filhos ao centro verticalmente dentro do contêiner flexível. */
+  background: linear-gradient(to right, /* Inicia um gradiente linear que vai da esquerda para a direita. */
+    rgba(243, 222, 26, 1) 0%, /* Cor #F3DE1A com 100% de opacidade no início do gradiente (0%). */
+    rgba(243, 222, 26, 1) 10%, /* Cor #F3DE1A com 100% de opacidade até 10% do gradiente. */
+    rgba(243, 222, 26, 0.86) 24%, /* Cor #F3DE1A com 86% de opacidade em 24% do gradiente. */
+    rgba(243, 222, 26, 0.42) 58%, /* Cor #F3DE1A com 42% de opacidade em 58% do gradiente. */
+    rgba(243, 222, 26, 0.26) 74%, /* Cor #F3DE1A com 26% de opacidade em 74% do gradiente. */
+    rgba(243, 222, 26, 0) 100% /* Cor #F3DE1A com 0% de opacidade (transparente) no final do gradiente (100%). */
+  ), 
+  url("../assets/image/background.png") no-repeat center center; /* Adiciona uma imagem de fundo que não se repete e está centralizada. */
+  background-size: cover; /* Redimensiona a imagem de fundo para cobrir todo o elemento. */
+  height: 90vh; /* Define a altura do elemento como 90% da altura da janela de visualização (viewport height). */
+}
+```
+
+#### Explicação dos principais pontos:
+
+1. **`margin-top: 80px;`**
+   - Define um espaço de 80 pixels acima do elemento `.banner`.
+
+2. **`display: flex;`**
+   - Transforma o `.banner` em um contêiner flexível, permitindo a utilização das propriedades de layout flexbox.
+
+3. **`align-items: center;`**
+   - Alinha verticalmente os itens filhos do contêiner flexível ao centro.
+
+4. **`background: linear-gradient(to right, ... ), url("../assets/image/background.png") no-repeat center center;`**
+   - Define um plano de fundo composto por um gradiente linear e uma imagem.
+   - O gradiente vai da esquerda para a direita (`to right`).
+   - Especifica várias paradas de cor (`color stops`) no gradiente com diferentes níveis de opacidade.
+   - Adiciona uma imagem de fundo que não se repete (`no-repeat`) e é centralizada horizontalmente e verticalmente (`center center`).
+
+5. **`background-size: cover;`**
+   - Redimensiona a imagem de fundo para garantir que ela cubra completamente o elemento, mantendo suas proporções.
+
+6. **`height: 90vh;`**
+   - Define a altura do elemento como 90% da altura da janela de visualização, ajustando-se dinamicamente ao tamanho da janela.
+
+Este CSS cria uma seção de banner com um gradiente amarelo que vai se tornando transparente, sobreposto a uma imagem de fundo que cobre todo o elemento e é centralizada.
 
 ~~~css
 .banner-text {
