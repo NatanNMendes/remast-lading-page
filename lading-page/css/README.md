@@ -136,8 +136,6 @@ Define o estilo do menu móvel (hambúrguer) para dispositivos menores.
 
 Define o estilo geral das seções da página.
 
-Vamos analisar e explicar o CSS para a classe `.banner` passo a passo:
-
 ```css
 .banner {
   margin-top: 80px; /* Define uma margem superior de 80 pixels. */
