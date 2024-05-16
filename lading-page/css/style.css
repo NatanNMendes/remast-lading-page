@@ -95,9 +95,9 @@ html, body {
   margin-top: 80px;
   display: flex;
   align-items: center;
-  background: url("assets/image/background.png") no-repeat center center;
+  background: url("../assets/image/background.png") no-repeat center center;
   background-size: cover;
-  height: 88vh;
+  height: 90vh;
 }
 
 .banner-text {
