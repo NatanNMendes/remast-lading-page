@@ -2,7 +2,7 @@
 
 O código HTML a seguir define a estrutura de uma página web para a empresa Remast Consultoria em Gestão Empresarial. A página é composta por várias seções, cada uma com uma função específica, e inclui links para estilos e scripts externos para melhorar a aparência e a funcionalidade.
 
-## Cabeçalho (`<head>`)
+# Cabeçalho (`<head>`)
 
 ### Metadados e Configurações Básicas
 
@@ -32,9 +32,9 @@ O código HTML a seguir define a estrutura de uma página web para a empresa Rem
 - **link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"**: Inclui a biblioteca Animate.css para animações.
 - **link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"**: Inclui a biblioteca AOS para animações de rolagem.
 
-## Corpo (`<body>`)
+# Corpo (`<body>`)
 
-### Cabeçalho e Navegação (`<header>`)
+## Cabeçalho e Navegação (`<header>`)
 
 ~~~html
 <header>
@@ -64,9 +64,9 @@ O código HTML a seguir define a estrutura de uma página web para a empresa Rem
 - **div class="mobile-menu"**: Menu para dispositivos móveis com linhas que representam o ícone de menu.
 - **ul class="nav-list"**: Lista de navegação com links para seções da página.
 
-### Seções da Página (`<section>`)
+## Seções da Página (`<section>`)
 
-#### Banner
+## Banner
 
 ~~~html
 <section class="banner" id="banner">
@@ -76,7 +76,7 @@ O código HTML a seguir define a estrutura de uma página web para a empresa Rem
 
 - **section class="banner" id="banner"**: Seção do banner principal com uma mensagem promocional.
 
-#### Quem Somos
+## Quem Somos
 
 ~~~html
 <section class="section" id="who-we-are">
@@ -94,13 +94,13 @@ O código HTML a seguir define a estrutura de uma página web para a empresa Rem
 - **h1 class="title"**: Título da seção.
 - **div class="double-column"**: Contém o texto descritivo e uma imagem.
 
-#### Animações AOS
+### Animações AOS
 
 - **data-aos="fade-right"**: Aplica uma animação de desvanecimento da direita.
 - **data-aos="fade-left"**: Aplica uma animação de desvanecimento da esquerda.
 - **data-aos-duration="1000"**: Define a duração da animação como 1000 milissegundos (1 segundo).
 
-#### Nossos Serviços
+## Nossos Serviços
 
 ~~~html
 <section class="section" id="our-services" data-aos="fade-up" data-aos-duration="1000">
@@ -124,12 +124,12 @@ O código HTML a seguir define a estrutura de uma página web para a empresa Rem
 - **h5 class="title"**: Título da seção.
 - **div class="card-group"**: Grupo de cartões que descrevem cada serviço.
 
-#### Animações AOS
+### Animações AOS
 
 - **data-aos="fade-up"**: Aplica uma animação de desvanecimento de baixo para cima.
 - **data-aos-duration="1000"**: Define a duração da animação como 1000 milissegundos (1 segundo).
 
-#### Por Que Contratar uma Consultoria?
+## Por Que Contratar uma Consultoria?
 
 ~~~html
 <section class="section" id="consultancy">
@@ -147,13 +147,13 @@ O código HTML a seguir define a estrutura de uma página web para a empresa Rem
 - **h5 class="title"**: Título da seção.
 - **div class="double-column"**: Contém o texto explicativo e uma imagem.
 
-#### Animações AOS
+### Animações AOS
 
 - **data-aos="fade-right"**: Aplica uma animação de desvanecimento da direita.
 - **data-aos="fade-left"**: Aplica uma animação de desvanecimento da esquerda.
 - **data-aos-duration="1000"**: Define a duração da animação como 1000 milissegundos (1 segundo).
 
-#### Como Fazemos
+## Como Fazemos
 
 ~~~html
 <section class="section" id="how-we-do">
@@ -178,13 +178,13 @@ O código HTML a seguir define a estrutura de uma página web para a empresa Rem
 - **h5 class="title"**: Título da seção.
 - **div class="double-column"**: Contém o texto descritivo e os passos do processo.
 
-#### Animações AOS
+### Animações AOS
 
 - **data-aos="fade-right"**: Aplica uma animação de desvanecimento da direita.
 - **data-aos="fade-left"**: Aplica uma animação de desvanecimento da esquerda.
 - **data-aos-duration="1000"**: Define a duração da animação como 1000 milissegundos (1 segundo).
 
-#### Contato
+## Contato
 
 ~~~html
 <section class="section" id="contact">
@@ -232,13 +232,13 @@ O código HTML a seguir define a estrutura de uma página web para a empresa Rem
 - **div class="map-container"**: Contém um iframe com o mapa de localização.
 - **div class="group-contact-information"**: Grupo de cartões com informações de contato.
 
-#### Animações AOS
+### Animações AOS
 
 - **data-aos="fade-up"**: Aplica uma animação de desvanecimento de baixo para cima.
 - **data-aos-duration="1000"**: Define a duração da animação como 1000 milissegundos (1 segundo).
 - **data-aos-duration="2000"**: Define a duração da animação como 2000 milissegundos (2 segundos).
 
-### Rodapé (`<footer>`)
+## Rodapé (`<footer>`)
 
 ~~~html
 <footer class="footer">
@@ -253,7 +253,7 @@ O código HTML a seguir define a estrutura de uma página web para a empresa Rem
 
 - **footer class="footer"**: Rodapé contendo informações de direitos autorais.
 
-### JavaScript (`<script>`)
+# JavaScript (`<script>`)
 
 ~~~html
 <script src="js/scripts.js"></script>
