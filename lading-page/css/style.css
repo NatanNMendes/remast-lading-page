@@ -103,7 +103,7 @@ html, body {
     rgba(243, 222, 26, 0.26) 74%, 
     rgba(243, 222, 26, 0) 100%
   ), 
-  url("../assets/image/background.png") no-repeat center center;
+  url("../assets/image/remast-banner.png") no-repeat center center;
   background-size: cover;
   height: 90vh;
 }
