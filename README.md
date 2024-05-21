@@ -10,8 +10,8 @@ _By Natan Nunes Mendes (NatanNMendes)_
 ## Visão Geral
 Este repositório contém o código-fonte do site da Remast Consultoria em Gestão Empresarial. O site é projetado para fornecer informações detalhadas sobre os serviços de consultoria da Remast em gestão empresarial, destacando seus serviços, equipe e como ajudam as empresas a transformar desafios em oportunidades.
 
-[![Protótipo](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/proto/mafmFQrw64alLyGX45qDuT/LadingPage---Remast-Consultoria?node-id=13-2&t=4IZO1EsyPULbGnCP-1&scaling=min-zoom&page-id=0%3A1)
-![Ver na Web](https://img.shields.io/badge/WordPress-21759B.svg?style=for-the-badge&logo=WordPress&logoColor=white)
+[![Figma](https://img.shields.io/badge/Protótipo-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/proto/mafmFQrw64alLyGX45qDuT/LadingPage---Remast-Consultoria?node-id=13-2&t=4IZO1EsyPULbGnCP-1&scaling=min-zoom&page-id=0%3A1)
+![Wordpress](https://img.shields.io/badge/Ver%20na%20WEB-21759B.svg?style=for-the-badge&logo=WordPress&logoColor=white)
 
 ### Tecnologias Utilizadas
 - HTML5
