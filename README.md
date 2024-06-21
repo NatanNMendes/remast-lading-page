@@ -67,7 +67,7 @@ git clone https://github.com/NatanNMendes/remast-lading-page.git
 ## Agradecimentos
 
 - [Conexão Azul](https://www.conexaoazul.com/)
-- [Remast](https://www.conexaoazul.com/)
+- [Remast](https://remast.remast.com.br/site/remast/)
 - [Font Awesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
