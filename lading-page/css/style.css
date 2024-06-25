@@ -113,8 +113,8 @@ html, body {
   text-align: center;
   font-size: 50px;
   font-weight: 500;
-  width: 80%;
-  height: 500px;
+  width: 90%;
+  height: 400px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -357,7 +357,7 @@ html, body {
   }
 
   .banner-text {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .title {
